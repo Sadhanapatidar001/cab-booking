@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+
+   <!-- Font Awesome CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- Custom CSS styles -->
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         background-color: #f4f4f4;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      .header {
+         background-color: #333;
+         color: #fff;
+         padding: 1rem;
+         text-align: center;
+      }
+
+      .header .logo {
+         color: #fff;
+         font-size: 2rem;
+         text-decoration: none;
+      }
+
+      .form-container {
+         max-width: 400px;
+         margin: 2rem auto;
+         background-color: #fff;
+         padding: 2rem;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-container h3 {
+         margin-bottom: 1rem;
+         font-size: 1.5rem;
+         color: #333;
+      }
+
+      .form-container p {
+         margin: 0.5rem 0;
+         color: #333;
+      }
+
+      .form-container .box {
+         width: 100%;
+         padding: 0.5rem;
+         margin: 0.5rem 0;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+      }
+
+      .form-container .btn {
+         width: 100%;
+         padding: 0.5rem;
+         border: none;
+         border-radius: 5px;
+         background-color: #333;
+         color: #fff;
+         font-size: 1rem;
+         cursor: pointer;
+         margin-top: 1rem;
+      }
+
+      .form-container .btn:hover {
+         background-color: #555;
+      }
+
+      .footer {
+         text-align: center;
+         padding: 1rem;
+         background-color: #333;
+         color: #fff;
+         position: fixed;
+         bottom: 0;
+         width: 100%;
+      }
+
+      .footer span {
+         color: #ff6347;
+      }
+   </style>
+</head>
+<body>
+
+<header class="header">
+   <a href="home.html" class="logo">WELCOME....</a>
+</header>   
+
+<section class="form-container">
+   <form action='register.php' method="post" enctype="multipart/form-data">
+      <h3>Register Now</h3>
+      <p>Your Name <span>*</span></p>
+      <input type="text" name="name" placeholder="Enter your name" required maxlength="50" class="box">
+      <p>Your Email <span>*</span></p>
+      <input type="email" name="email" placeholder="Enter your email" required maxlength="50" class="box">
+      <p>Your Password <span>*</span></p>
+      <input type="password" name="password" placeholder="Enter your password" required maxlength="20" class="box">
+      <input type="submit" value="Register Now" name="submit" class="btn">
+   </form>
+</section>
+
+<footer class="footer">
+   Thank you!
+</footer>
+
+<!-- Custom JS file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
